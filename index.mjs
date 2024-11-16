@@ -5,7 +5,6 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static('public'));
 
-
 let randomImageData;
 
 const fetchRandomImage = async () => {
