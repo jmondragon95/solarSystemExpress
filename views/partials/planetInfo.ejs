@@ -1,0 +1,20 @@
+<br>
+<button type="button" id="togglePlanetImageButton">Show Planet</button>
+<img src="<%= planet.image %>" class="planetImage" alt="Planet Image">
+
+<section class="planetInfo">
+    <h3>Description</h3>
+    <p class="indented"><%= planet.description %></p>
+    <span class="planetInfoHeader">Distance From Sun:</span> <%= planet.distanceFromSun %>
+    <br>
+    <span class="planetInfoHeader">One Earth Day:</span> <%= planet.oneEarthDay %>
+    <br>
+    <span class="planetInfoHeader">Year Length:</span> <%= planet.yearLength %>
+    <br>
+    <span class="planetInfoHeader">Radius:</span> <%= planet.radius %>
+    <br>
+    <span class="planetInfoHeader">Moons:</span> <%= planet.moons %>
+    <br>
+    <a href="<%= planet.websiteLink %>" alt="NASA Planet Mercury Website">More info</a>
+</section>
+</main>

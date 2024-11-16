@@ -1,0 +1,37 @@
+<%- include('partials/head.ejs') %>
+
+<style>
+    body {
+        background-image: url("<%= nasaAPOD.hdurl %>");
+    }
+</style>
+
+<body>
+<h1>The Solar System</h1>
+
+<%- include('partials/nav.ejs') %>
+
+<h2>NASA's Astronomy Picture of the Day (APOD)</h2>
+
+<br><br>
+
+<h3 class="nasaAPOD"><%= nasaAPOD.title %></h3>
+<br>
+<h3 class="nasaAPOD"><%= nasaAPOD.date %></h3>
+
+<section class="planetInfo" id="nasaAPOD">
+    <p class="indented"><%= nasaAPOD.explanation %></p>
+</section>
+</main>
+<footer>
+    <p>Photo obtained through
+        <a href="<%= nasaAPOD.hdurl %>" target="_blank" style="color: white;">
+            NASA's Astronomy Picture of the Day
+        </a> on Unsplash
+    </p>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+
+</html>
